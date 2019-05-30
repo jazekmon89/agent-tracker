@@ -1,0 +1,53 @@
+#content{
+  flex:1;
+  transition: all 0.6s cubic-bezier(0.945, 0.020, 0.270, 0.665);
+  padding-left: $spacer;
+
+  &.slide{
+
+
+    @include media-breakpoint-down(md) {
+        padding-left: calc( $spacer * 2);
+    }
+
+    @include media-breakpoint-down(sm) {
+      padding-left: 0;
+    }
+  }
+
+
+
+
+  @include media-breakpoint-down(md) {
+    padding-left: $spacer;
+  }
+
+  @include media-breakpoint-down(sm) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+
+
+.overlay {
+
+    transition: all 0.6s cubic-bezier(0.945, 0.020, 0.270, 0.665);
+    /* full screen */
+    width: 100vw;
+    height: 100vh;
+    /* white */
+    background: rgba(255,255,255,.618);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    /* middle layer, i.e. appears below the sidebar */
+    z-index: 99;
+
+    @include media-breakpoint-down(sm) {
+    &.display{
+      display: block;
+    }
+    }
+}

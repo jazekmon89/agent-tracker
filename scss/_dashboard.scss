@@ -1,0 +1,39 @@
+#dashboard{
+
+    min-height: 100vh;
+    position: relative;
+    padding: 50px;
+    overflow-x: hidden;
+
+    &::before{
+      content: "";
+      position: absolute;
+      z-index: -1;
+      background: #F1F5F9;
+
+      top: 0px;
+      left: 0px;
+      bottom: 0px;
+      right: 0px;
+    }
+
+    .nc-icon{
+      color: theme-color('primary');
+    }
+
+
+
+
+
+
+
+
+
+    #main-content{
+      // background-color: #F6F9FC;
+      // min-height: 100%;
+
+    }
+
+
+}

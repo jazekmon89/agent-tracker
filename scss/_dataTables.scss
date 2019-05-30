@@ -1,0 +1,82 @@
+
+  .datePicker-container{
+
+    &:first-child{
+
+      input{
+        border-top-left-radius: $border-radius !important;
+        border-bottom-left-radius: $border-radius !important;
+        border-top-right-radius: 0 !important;
+        border-bottom-right-radius: 0 !important;
+      }
+
+    }
+
+    display: inline-block;
+    position: relative;
+    width: 50%;
+    label{
+      position: absolute;
+      z-index: 999;
+      padding-left: $input-btn-padding-x;
+      font-size: .6rem;
+      top: 5px;
+    }
+    input{
+      width: 100% !important;
+      padding-top: 14px;
+      padding-bottom: 2px;
+      text-align: left !important;
+    }
+  }
+
+  #transaction_length{
+    label{
+      display: block;
+      display: none;
+      // width: 100%;
+
+    .form-control.form-control-sm{
+      display: inline-block;
+      width: auto;
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+    }
+  }
+
+  #transaction_filter{
+    text-align: right;
+    display: none;
+
+    label{
+      display: block;
+      // width: 100%;
+
+    .form-control.form-control-sm{
+      display: inline-block;
+      width: auto;
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+    }
+  }
+
+.dataTable{
+  font-size: .8rem;
+}
+
+.dataTables_length{
+  display: none;
+}
+
+.dataTables_filter{
+  display: none;
+}
+
+@include media-breakpoint-down(sm) {
+  div.dataTables_wrapper div.dataTables_paginate ul.pagination{
+    justify-content: center !important;
+    margin-top: $spacer !important;
+  }
+}

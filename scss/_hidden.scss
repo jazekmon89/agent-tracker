@@ -1,0 +1,44 @@
+@include media-breakpoint-up(xs) { }
+@include media-breakpoint-up(sm) {
+
+
+
+ }
+@include media-breakpoint-up(md) {
+
+  .covert-md-up{
+    opacity: 0 !important;
+  }
+
+  .hide-md-up{
+    display: none !important;
+  }
+
+}
+@include media-breakpoint-up(lg) {
+  .hide-lg-up{
+    display: none !important;
+  }
+
+}
+@include media-breakpoint-up(xl) {  }
+
+@include media-breakpoint-down(xs) {  }
+@include media-breakpoint-down(sm) {
+
+  .p-sm-3{
+    padding: $spacer !important;
+  }
+
+}
+@include media-breakpoint-down(md) {
+  .hidden-md-down{
+    display: none !important;
+  }
+
+  .px-md-3{
+    padding-left: $spacer !important;
+    padding-right: $spacer !important;
+  }
+}
+@include media-breakpoint-down(lg) {  }
